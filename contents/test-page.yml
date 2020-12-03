@@ -1,0 +1,43 @@
+title: Test page
+components:
+  - id: 1
+    builder_name: header
+    header:
+      title: This is a test page
+      subtitle: I'm just testing my idea here
+      image: https://picsum.photos/id/237/200/300
+  - id: 2
+    builder_name: iconed_list
+    iconed-list:
+      title: This is an iconed list
+      items:
+        - id: 1
+          icon:
+            name: check
+            color: '#333'
+            size: 3
+          text: This is the first item of the list
+        - id: 2
+          icon:
+            name: check
+            color: green
+            size: 3
+          text: This is the second item of the list
+        - id: 3
+          icon:
+            name: check
+            color: green
+            size: 3
+          text: This is the third item of the list
+  - id: 3
+    builder_name: header
+    header:
+      title: This is a test page 2
+      subtitle: I'm just testing my idea here 2
+      image: https://picsum.photos/id/237/200/300
+  - id: 4  
+    builder_name: header
+    header:
+      title: This is a test page 3
+      subtitle: I'm just testing my idea here 2
+      image: https://picsum.photos/id/237/200/300
