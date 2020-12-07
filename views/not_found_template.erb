@@ -16,11 +16,19 @@
       </nav>
     </header>
     <main class="container mt-3">
-      <div id="app">
-        <% locals['components'].each do |component| %>
-          <%= erb :"components/#{component['name']}", :locals => component['content'] %>
-        <% end %>
-      </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="error-template">
+                    <h1>
+                        Oops!</h1>
+                    <h2>
+                        404 Not Found</h2>
+                    <div class="error-details">
+                        Sorry, an error has occured, Requested page not found!
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
