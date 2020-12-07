@@ -1,7 +1,7 @@
 <div class="iconded-list">
   <div class='text-left'>
     <h1><%= locals.fetch('title', '') %></h1>
-    <ul style = 'list-style: none;'>
+    <ul class='list-unstyled'>
         <% locals.fetch('items', []).each do |item| %>
         <li>
             <i class='fas fa-<%= item['icon']['name'] %>' style='color: <%= item['icon']['color'] %>'></i>
