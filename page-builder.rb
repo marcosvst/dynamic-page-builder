@@ -15,7 +15,7 @@ get '/:endpoint' do
 
         @page_content = ''
         file_components.fetch('components', {}).each do |component|
-            @page_content += send(component['builder_name'], component)
+            @page_content += send(component['name'].gsub('-', '_'), component['content'])
         end
         
         erb :default_template

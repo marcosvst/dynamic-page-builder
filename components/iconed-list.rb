@@ -1,6 +1,4 @@
 def iconed_list(props)
-    props = props['iconed-list']
-
     items = ''
     items += " 	<ul style = 'list-style: none'> "
     props.fetch('items', []).each do |item|
